@@ -9,4 +9,8 @@ data class PatientResponse(
     var Name: String,
     @SerializedName("surname")
     var Surname: String
-)
+) {
+    fun getFullname() : String {
+        return "$Name $Surname";
+    }
+}
