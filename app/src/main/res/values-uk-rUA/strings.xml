@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartDripper.Mobile</string>
+    <string name="invalid_email">Недійсна електронна адреса</string>
+    <string name="invalid_password">Пароль повинен містити більше 5 символів</string>
+    <string name="login">Увійти</string>
+    <string name="password">Пароль</string>
+    <string name="email">Електронна пошта</string>
+    <string name="error">Error</string>
+    <string name="loading">Loading</string>
+    <string name="processing">In a process</string>
+    <string name="title_home">Головна</string>
+    <string name="title_dashboard">Дашборд</string>
+    <string name="title_notifications">Повідомлення</string>
+</resources>
