@@ -3,6 +3,7 @@ package com.example.smartdrippermobile.data
 import android.content.Context
 import android.content.SharedPreferences
 import com.example.smartdrippermobile.R
+import com.example.smartdrippermobile.data.network.dto.responses.AppointmentResponse
 import com.example.smartdrippermobile.data.network.dto.responses.JWTTokenResponse
 import java.text.SimpleDateFormat
 import java.util.*
@@ -32,6 +33,12 @@ class SessionManager(context: Context) {
         editor.apply()
     }
 
+    fun saveAppointmentId(id: String) {
+        val editor = prefs.edit()
+        editor.putString("appointmentId", id)
+        editor.apply()
+    }
+
     fun fetchAuthToken(): String? {
         return prefs.getString(USER_TOKEN, null)
     }
@@ -44,5 +51,9 @@ class SessionManager(context: Context) {
         val formatter = SimpleDateFormat("EEE MMM d HH:mm:ss Z yyyy", Locale.ENGLISH)
         val dateInString = prefs.getString(dateName, null)
         return if (dateInString != null) formatter.parse(dateInString) else null
+    }
+
+    fun fetchAppointmentId() : String {
+        return prefs.getString("appointmentId", "-1")!!
     }
 }

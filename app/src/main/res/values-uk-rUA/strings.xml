@@ -6,10 +6,12 @@
     <string name="login">Увійти</string>
     <string name="password">Пароль</string>
     <string name="email">Електронна пошта</string>
-    <string name="error">Error</string>
-    <string name="loading">Loading</string>
-    <string name="processing">In a process</string>
+    <string name="error">Помилка</string>
+    <string name="loading">Загрузка</string>
+    <string name="processing">В обробці</string>
     <string name="title_home">Головна</string>
     <string name="title_dashboard">Дашборд</string>
     <string name="title_notifications">Повідомлення</string>
+    <string name="detail_activity_title">Деталі призначення</string>
+    <string name="is_done_label">Це призначення вже зроблено</string>
 </resources>

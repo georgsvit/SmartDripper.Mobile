@@ -5,4 +5,5 @@ object Constants {
     const val LOGIN_URL = "nurses/login"
     const val APPOINTMENTS_URL = "appointments/"
     const val DONE_URL = "done/{appointmentId}"
+    const val APPOINTMENT_ID_URL = "{appointmentId}"
 }
